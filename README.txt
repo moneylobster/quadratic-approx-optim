@@ -10,7 +10,7 @@ Requirements
 Running
 --------------------------------------------------------------------------------
 	Training
-The program needs data to run. This data already exists in the data/ folder, but
+The program needs data to run. This data already exists in the py/data/ folder, but
 to add more data, run py/train.py. Using your mouse, push the blue box onto the
 green square. Then press Esc to stop recording. On the python terminal, press Enter
 to save the recording.
