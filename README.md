@@ -1,4 +1,8 @@
-![](lpfitter.mp4)
+
+
+
+https://github.com/moneylobster/quadratic-approx-optim/assets/87999452/c91e4c88-25cb-441c-92fb-357e8cd1d2db
+
 
 ## Requirements
 --------------------------------------------------------------------------------
