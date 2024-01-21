@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbxebgy6wvb2g"]
+
+[ext_resource type="Script" path="res://kineplayer.gd" id="1_eo08w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ffvvi"]
+
+[node name="kineplayer" type="CharacterBody2D"]
+position = Vector2(0, -1)
+collision_mask = 0
+motion_mode = 1
+platform_on_leave = 2
+platform_floor_layers = 4294967040
+script = ExtResource("1_eo08w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ffvvi")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, -10, -5, -9, -8, -6, -10, -2, -10, 2, -8, 6, -5, 9, -1, 10, 2, 10, 5, 9, 8, 6, 9, 4, 10, 1, 10, -3, 8, -6, 6, -8, 2, -10)

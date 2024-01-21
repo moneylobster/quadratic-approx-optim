@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://sh0pmy2dsix1"]
+
+[ext_resource type="Script" path="res://pushbox.gd" id="1_7uybc"]
+[ext_resource type="PackedScene" uid="uid://bccvd6uyjgeck" path="res://box.tscn" id="1_ia2el"]
+[ext_resource type="Script" path="res://box.gd" id="3_dwiqw"]
+[ext_resource type="PackedScene" uid="uid://bkuta3a2k0k6v" path="res://cursor.tscn" id="3_eg7nx"]
+[ext_resource type="Script" path="res://cursor.gd" id="4_hofdp"]
+[ext_resource type="PackedScene" uid="uid://bbxebgy6wvb2g" path="res://kineplayer.tscn" id="4_twei0"]
+
+[node name="pushbox" type="Node2D"]
+script = ExtResource("1_7uybc")
+
+[node name="box" parent="." instance=ExtResource("1_ia2el")]
+position = Vector2(280, 172)
+mass = 10.0
+continuous_cd = 2
+linear_damp = 10.0
+angular_damp = 10.0
+script = ExtResource("3_dwiqw")
+
+[node name="kineplayer" parent="." instance=ExtResource("4_twei0")]
+position = Vector2(0, 0)
+K = 10
+
+[node name="cursor" parent="." instance=ExtResource("3_eg7nx")]
+polygon = PackedVector2Array(0, -3, -3, 0, 0, 3, 3, 0)
+script = ExtResource("4_hofdp")
+
+[node name="goal" type="Polygon2D" parent="."]
+position = Vector2(400, 300)
+color = Color(0, 1, 0, 0.556863)
+polygon = PackedVector2Array(-35, -28, -35, 28, 35, 28, 35, -28)
