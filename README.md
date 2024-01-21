@@ -1,3 +1,5 @@
+![](lpsolver.mp4)
+
 ## Requirements
 --------------------------------------------------------------------------------
 - Windows (on linux the pusht executable needs to be rebuilt using Godot)
